@@ -1,0 +1,30 @@
+/* ÖDEV 11
+Aşağıda basit bir kart eşleştirme oyununun bağlantısı paylaşılmıştır. (HTML, CSS, JS kodlarına sayfa kaynağından erişilebilir)
+https://foto-eslesme-soru.netlify.app/  
+
+github hesabınızda foto-eslesme adında bir repo oluşturun ve uygulamaya aşağıdaki özellikleri ekleyin ve reponuzu güncelleyin:
+
+Aşağıdaki görevler tamamlandıktan sonra ödev/çalışma tablosuna işaret bırakabilirsiniz.
+
+Görev 1:
+Oyunun tamamlanması için 4 eş kartın kullanıcı tarafından eşleştirilmesi gerekir. Kullanıcı 4 kartı da eşleştirdiğinde sayfa ortasında beliren hareketli gif dosyası formatında bir kutlama görseli belirsin ve bu fotoğraf 5 saniye sonra ortadan kaybolsun.
+
+Yukarıdaki işlemi gerçekleştiren kodları oyun kodları içine yazın ve son oyun kodlarını github hesabınızda güncelleyin (commit).
+
+
+Görev 2:
+Görev 1 tamamlandıktan sonra (commit), aşağıdaki işlemleri gerçekleştirin.
+
+const fotoNumaralari = [
+    10, 20, 30, 20,
+    10, 40, 40, 30
+];
+
+Eşleştirme oyununda fotoğraf numaraları yukarıdaki kod bloğundaki gibi hardcoded(elle) programcı tarafından girilmektedir.
+
+Bu numaraları 1-99 arası(1 ve 99 dahil) sayılardan rastgele 4 çift oluşturacak şekilde üreten bir fonksiyon yazarak, kod bloğundaki array değerini bu fonksiyondan dönen array ile değiştiren kodları yazın ve oyun kodlarını github hesabınızda güncelleyin (commit).
+
+Not: Rastgele sayı üretme için "js random number" "js random number array" aramaları yaparak ipuçları elde edebilirsiniz.
+
+Dikkat: Fonksiyon geriye 8 adet number tipinde eleman içeren bir array döndürmelidir. 8 number elemanı 2'şerli eşler şeklinde olmalıdır.
+ */
