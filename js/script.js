@@ -29,7 +29,32 @@ let randomNum = function(){
 /*
 Görev 2: Bu numaraları 1-99 arası(1 ve 99 dahil) sayılardan rastgele 4 çift oluşturacak şekilde üreten bir fonksiyon yazarak, kod bloğundaki array değerini bu fonksiyondan dönen array ile değiştiren kodları yazın
 */
-const fotoNumaralari = [10, 20, 30, 20, 10, 40, 40, 30];
+
+function rastgeleNumara() {
+    var num_list = [];
+    //rastgele numaralr sayesinde yeni dizi oluşturcak ve her seferinde resimler değişicek
+    for (let i = 0; i < 4; i++) {
+        let sayi = Math.floor(Math.random() * 99) + 1;
+
+        if (num_list.includes(sayi)) {
+            i--;
+            continue;
+        }
+
+        num_list.push(sayi, sayi);
+
+        if (num_list.length >= 8) {
+            break;
+        }
+    }
+
+    num_list.sort(() => 0.5 - Math.random()); // resimleri rastgele sıralıcak
+
+    return num_list;
+}
+
+
+const fotoNumaralari = rastgeleNumara();
 
 
 console.log(fotoNumaralari);
@@ -102,6 +127,8 @@ function kartTiklama(olay) {
             Görev 1: Kullanıcı 4 kartı da eşleştirdiğinde sayfa ortasında beliren hareketli gif dosyası formatında bir kutlama görseli belirsin ve bu fotoğraf 5 saniye sonra ortadan kaybolsun.
         */
 
+
+        //oyunun sonunda kutlama gifi gelicek 
         function kutlama() {
             const kutlamaGif = document.createElement("img");
             kutlamaGif.src = "https://media1.tenor.com/m/vxSHR6ohQn4AAAAd/congrats-congrats-gif.gif";
@@ -131,6 +158,8 @@ function kartTiklama(olay) {
         }, 1500);
     }
 }
+
+
 
 
 
